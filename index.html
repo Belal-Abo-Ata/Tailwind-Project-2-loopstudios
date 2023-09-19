@@ -12,9 +12,57 @@
       rel="stylesheet" />
     <!-- Main CSS Styling -->
     <link rel="stylesheet" href="./style/style.css" />
-    <title>Project 2 ()</title>
+    <title>Project 2 (looopstudios)</title>
+    <!-- JavaScript -->
+    <script src="./js/app.js" defer></script>
   </head>
-  <body>
-    <div class="text-5xl text-blue-500 info">hi</div>
+  <body class="">
+    <section class="hero relative h-[60vh]">
+      <!-- Hero Container -->
+      <div class="container mx-auto absolute left-1/2 -translate-x-1/2 z-20">
+        <!-- Header -->
+        <header class="flex items-center justify-between p-8">
+          <!-- Logo -->
+          <div class="logo ">
+            <img
+              src="./images/logo.svg"
+              alt="Typography Logo of word loopstudios" />
+          </div>
+          <!-- Icons -->
+          <div class="icons z-30">
+            <button
+              class="burger-icon md:hidden transition-all duration-500"
+              data-burger-icon>
+              <img
+                src="./images/icon-hamburger.svg"
+                alt="Hamburger Icon to toggle the nav bar" />
+            </button>
+            <button
+              class="hidden md:hidden burger-icon transition-all duration-500 z-30"
+              data-close-icon>
+              <img
+                src="./images/icon-close.svg"
+                alt="Hamburger Icon to toggle the nav bar" />
+            </button>
+          </div>
+        </header>
+      </div>
+      <div class="container mx-auto">
+        <!-- Paragraph -->
+        <div class="absolute top-1/2 left-12 -translate-y-1/2  border border-white p-6 text-white text-3xl my-16 max-w-xl leading-8 tracking-widest uppercase ">
+          Impressive Experiences That Deliver 
+        </div>
+      </div>
+      <!-- Nav bar Mobile -->
+      <nav
+        class="nav--mobile absolute -translate-y-[1000px] md:hidden h-screen z-10 bg-black flex flex-col p-24 gap-4 text-white text-lg w-full transition-all duration-500"
+        data-nav-mobile>
+        <a href="#about">about</a>
+        <a href="#careers">careers</a>
+        <a href="#events">Events</a>
+        <a href="#products">products</a>
+        <a href="#support">support</a>
+      </nav>
+    </section>
   </body>
 </html>
